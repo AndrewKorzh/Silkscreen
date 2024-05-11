@@ -11,4 +11,4 @@
 
 
  Слои, на которые было разбито изображение (снизу - цвет в RGB)
-![Alt text](/README/clustered_dog.jpg "Итоговое изображение")
+![Alt text](/README/dog_layers.png "Слои")
