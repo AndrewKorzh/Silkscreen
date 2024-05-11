@@ -55,7 +55,7 @@ def save_color_layers(image_path, output_folder, clustered_img_path, num_colors 
         imsave(layer_path, layer, cmap='gray')
 
 
-
+'''
 
 # Пример использования
 image_path = 'C:\\Users\\korzh\\Downloads\\GP5SoQzRa4A.jpg'
@@ -65,7 +65,7 @@ num_colors = 10
 save_color_layers(image_path, output_folder, clustered_img_path, num_colors)
 
 
-
+'''
 
 
 #
