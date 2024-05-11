@@ -8,7 +8,8 @@ class SilkscreenWindow:
         self.back_ground = "#333"
         self.root.geometry("400x300+20+20")
         self.root.title("Silkscreen:")
-        self.window_max = 600
+        self.img_max_hight = 600
+        self.img_max_width = 1200
         self.root.configure(bg=self.back_ground)
 
         self.path_label = tk.Label(root, text="Image_Path", bg="#333", fg="white")
@@ -39,8 +40,8 @@ class SilkscreenWindow:
         try:
             image = Image.open(path)
             width, height = image.size
-            if width > 1200 or height > self.window_max:
-                new_height = self.window_max
+            if self.img_max_width > 1200 or height > self.img_max_hight:
+                new_height = self.img_max_hight
                 height_percent = (new_height / float(image.size[1]))
                 new_width = int((float(image.size[0]) * float(height_percent)))
                 image = image.resize((new_width, new_height))
@@ -48,7 +49,7 @@ class SilkscreenWindow:
             image = ImageTk.PhotoImage(image)
             self.image_label.config(image=image)
             self.image_label.image = image
-            self.root.geometry(f"{image.width()}x{image.height() + 185}")  # Изменение размера окна
+            self.root.geometry(f"{image.width()}x{image.height() + 120}")  # Изменение размера окна
 
 
         except Exception as e:
