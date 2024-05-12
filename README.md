@@ -3,7 +3,12 @@
 
 
  Уставнока зависимостей
+
+ 
+ ```bash
  pip install -r requirements.txt
+ ```
+
 
  Исходное изображение
 ![Alt text](/README/dog.jpg "Исходное изображение")
