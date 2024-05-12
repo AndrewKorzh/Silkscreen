@@ -28,12 +28,6 @@ class SilkscreenWindow:
         self.start_button = tk.Button(root, text="Start", command=self.start, bg="#555", fg="white")
 
 
-
-
-
-
-
-
         self.path_label.grid(row=0, column=0, padx = 10, pady=3,sticky="nsew")
         self.root.grid_columnconfigure(1, weight=1)
         self.path_entry.grid(row=1, column=0,columnspan=3,padx=10,pady=3,sticky="nsew")

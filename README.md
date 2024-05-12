@@ -2,6 +2,9 @@
  Проект Шелкография
 
 
+ Уставнока зависимостей
+ pip install -r requirements.txt
+
  Исходное изображение
 ![Alt text](/README/dog.jpg "Исходное изображение")
 
